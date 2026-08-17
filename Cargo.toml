@@ -1,0 +1,11 @@
+[workspace]
+# Toutes les crates d'exercice (exercices/chXX-nom) et le projet final partagent
+# ce workspace : un seul dossier target/, et `cargo test` à la racine teste tout.
+members = ["exercices/*", "projet/*"]
+
+[package]
+name = "tuto-rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
