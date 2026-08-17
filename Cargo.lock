@@ -3,5 +3,13 @@
 version = 4
 
 [[package]]
+name = "ch01-fizzbuzz"
+version = "0.1.0"
+
+[[package]]
+name = "ch01-temperature"
+version = "0.1.0"
+
+[[package]]
 name = "tuto-rust"
 version = "0.1.0"
