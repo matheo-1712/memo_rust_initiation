@@ -1,5 +1,5 @@
 [workspace]
-members = ["exercices/ch01-fizzbuzz", "exercices/ch01-temperature"]
+members = ["exercices/ch01-fizzbuzz", "exercices/ch01-statistiques", "exercices/ch01-temperature"]
 # Toutes les crates d'exercice (exercices/chXX-nom) et le projet final partagent
 # ce workspace : un seul dossier target/, et `cargo test` à la racine teste tout.
 
