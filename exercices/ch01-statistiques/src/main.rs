@@ -29,6 +29,7 @@ fn max(stats : &[u32]) -> u32 {
     max
 }
 
+// Version mieux optimisé
 fn min(stats: &[u32]) -> u32 {
     let mut min = stats[0];
     for &valeur in &stats[1..] {
