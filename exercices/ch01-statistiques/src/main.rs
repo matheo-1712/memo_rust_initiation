@@ -4,7 +4,9 @@ fn main() {
     println!("Moyenne : {}", moyenne(&stats));
     println!("Maximum : {}", max(&stats));
     println!("Minimum : {}", min(&stats));
-    println!("Etendue : {:?}", etendue(&stats))
+    println!("Etendue : {:?}", etendue(&stats));
+    println!("Stats supérieur à 10 : {}", superieurs(&stats));
+
 }
 
 fn moyenne(stats : &[u32]) -> f64 {
@@ -27,17 +29,26 @@ fn max(stats : &[u32]) -> u32 {
     max
 }
 
-fn min(stats : &[u32]) -> u32 {
-    let mut min : u32 = stats[0];
-    for n in 1..  stats.len() {
-        if stats[n] < min {
-            min = stats[n];
+fn min(stats: &[u32]) -> u32 {
+    let mut min = stats[0];
+    for &valeur in &stats[1..] {
+        if valeur < min {
+            min = valeur;
         }
     }
-    // La dernière ligne est return par défaut
     min
 }
 
 fn etendue(stats: &[u32]) -> u32 {
     max(stats) - min(stats)
+}
+
+fn superieurs(stats: &[u32]) -> u32 {
+    let mut superieurs: u32 = 0;
+    for &n in stats {
+        if n > 10 {
+            superieurs += 1;
+        }
+    }
+    superieurs
 }
