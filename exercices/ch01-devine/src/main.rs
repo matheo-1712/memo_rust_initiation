@@ -1,5 +1,5 @@
-use std::io::{self, Write};
-use rand::{random, RngExt};
+use rand::RngExt;
+use std::io::{self};
 
 fn main() {
     gamelogic()
